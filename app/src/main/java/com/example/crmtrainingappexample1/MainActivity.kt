@@ -3,6 +3,8 @@ package com.example.crmtrainingappexample1
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.TextView
+import android.widget.Toast
 
 
 class MainActivity : AppCompatActivity() {
@@ -12,5 +14,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun hi(view: View) {
+        view.setOnClickListener {
+            Toast.makeText(this,"hi", Toast.LENGTH_SHORT).show()
+        }
     }
 }
